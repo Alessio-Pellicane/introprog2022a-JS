@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/donut-clicker.css">
+  <script src="assets/partials/header.js"></script>
+  <script src="src/05-donut-clicker.js" defer></script>
+  <title>Javascript : donut clicker</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <h1>Javascript : donut clicker</h1>
+  <section class="theory">
+    <h2>Exercice à développer dans src/05-donut-clicker.js</h2>
+    <p>Créez un jeu qui reprend la principe du <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">cookie
+        clicker</a>.</p>
+    <p>Chaque fois que l'on appuie sur le donut, on gagne un point...</p>
+    <p>Le joueur peut acheter un "niveau" en sacrifiant 50 points et ainsi atteindre le niveau 2 et gagner 2 points
+      par
+      click. Le prix
+      double à chaque niveau. Le nombre de point gagné correspond au niveau du booster: niveau 3 = 3 clicks, niveau 4 =
+      4 clicks etc...</p>
+    <p>Il peut aussi acheter un booster pour 100 points (prix multiplié par deux après chaque achat), 1 booster produira
+      automatiquement 1 donut seconde, 2 boosters 2 donuts secondes, etc...</p>
+  </section>
+  <section class="exercice">
+    <div class="game">
+      <div class="over">
+        <div class="cookie">
+          <img class="cookieButton" src="assets/img/donut.png" ;>
+          <p class="counter">0</p>
+        </div>
+
+        <div class="buy">
+          <div class="multiplier">
+            <p class="multiplierText">Vous êtes niveau 1 et vous produisez 1 donut(s)/clic</p><button
+              class="multiplierButton">LVL UP (50)</button>
+          </div>
+          <div class="autoClick">
+            <p class="autoClickText">Vous avez 0 booster(s), produisant 0 donut(s)/seconde</p><button
+              class="autoClickButton">Acheter un booster (100)</button>
+          </div>
+        </div>
+      </div>
+      <div class="factories">
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+  <h2>Liens utiles :</h2>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"
+      target="_blank">Math.floor()</a></p>
+</footer>
+
+</html>

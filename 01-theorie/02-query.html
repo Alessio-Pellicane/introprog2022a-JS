@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/partials/header.js"></script>
+  <script src="src/02-query.js" defer></script>
+  <title>Javascript : Méthode querySelector</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <h1>Javascript : Méthode querySelector</h1>
+  <section class="theory">
+    <h2>Théorie</h2>
+    <p>La méthode querySelector() renvoie le premier élément qui correspond à un sélecteur CSS.</p>
+    <p>Pour renvoyer toutes les correspondances (pas seulement la première), on utilise querySelectorAll().</p>
+    <p>querySelector() et querySelectorAll() renvoient une liste de noeuds.</p>
+    <p>On peut aussi utiliser Get Elements by ID, Tag, Name pour accéder au DOM, mais c'est moins précis que
+      querySelector.</p>
+  </section>
+  <section class="exemple">
+    <h2>Exemple en JS</h2>
+    <p>Faites F12 et regardez dans la console !</p>
+    <div class="myClass">
+      <p>Hello world!</p>
+      <p id="myId">Hello world again!</p>
+    </div>
+    <p>Je suis un paragraphe</p>
+  </section>
+</body>
+<footer>
+  <h2>Liens utiles :</h2>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector"
+      target="_blank">MDN:Document.querySelector</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/API/Document/querySelectorAll"
+      target="_blank">MDN:Document.querySelectorAll()</a></p>
+  <p><a href="http://xahlee.info/js/js_get_elements.html" target="_blank">DOM: Get Elements by ID, Tag, Name, Class, CSS
+      Selector</a></p>
+</footer>
+
+</html>

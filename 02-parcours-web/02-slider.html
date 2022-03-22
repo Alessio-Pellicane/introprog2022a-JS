@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/partials/header.js"></script>
+  <script src="src/02-slider.js" defer></script>
+  <title>Javascript : Slider</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <h1>Javascript : Slider</h1>
+  <section class="theory">
+    <h2>Exercice à développer dans src/02-slider.js</h2>
+    <p>Réalisez un Sliders (Carousel) d'adorables petits chats (assets/img/cats/). Attention, lorsqu'on est sur l'image
+      du premier chat et qu'on fait "précédent" il doit afficher le dernier, et lorsqu'on est au dernier "suivant"
+      ramènera au premier.</p>
+    Ensuite ajoutez une fonctionnalité qui fait défiler les images toutes seules toutes les quatre secondes...
+    <p></p>
+  </section>
+  <section class="exercice">
+    <div id="slider">
+      <div class="gallery-img">
+        <img src="assets/img/cats/cat01.jpg" alt="Kittens" id="slide">
+      </div>
+
+      <div id="previous">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div id="next"><i class="fa-solid fa-angle-right"></i></div>
+    </div>
+  </section>
+</body>
+<footer>
+  <h2>Liens utiles :</h2>
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/setInterval" target="_blank">setInterval()</a></p>
+</footer>
+
+</html>

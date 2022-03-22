@@ -1,0 +1,44 @@
+.image_url {
+  width: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "nameHead tagHead brewedHead imageHead" "beer_name tagline first_brewed imageUrl";
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+}
+
+.nameHead {
+  grid-area: nameHead;
+}
+
+.tagHead {
+  grid-area: tagHead;
+}
+
+.brewedHead {
+  grid-area: brewedHead;
+}
+
+.imageHead {
+  grid-area: imageHead;
+}
+
+.beer_name {
+  grid-area: beer_name;
+}
+
+.tagline {
+  grid-area: tagline;
+}
+
+.first_brewed {
+  grid-area: first_brewed;
+}
+
+.imageUrl {
+  grid-area: imageUrl;
+}

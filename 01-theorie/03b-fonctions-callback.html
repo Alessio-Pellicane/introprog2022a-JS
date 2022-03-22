@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/partials/header.js"></script>
+  <script src="src/03b-fonctions-callback.js" defer></script>
+  <title>Javascript : setInterval()</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <h1>Javascript : setInterval()</h1>
+  <section class="theory">
+    <h2>Théorie</h2>
+    <p>La méthode setInterval() appelle une fonction à des intervalles spécifiés (en millisecondes).</p>
+    <p>La méthode setInterval() continue d'appeler la fonction jusqu'à ce que clearInterval() soit appelée ou que la
+      fenêtre soit fermée.</p>
+    <p>Lorsqu'une fonction passe en argument une autre fonction, on appelle cette deuxième fonction callback.</p>
+
+  </section>
+  <section class="exemple">
+    <h2>Exemple en JS</h2>
+    <p id="demo"></p>
+    <button onclick="myStartFunction()">Start time</button>
+    <button onclick="myStopFunction()">Stop time</button>
+  </section>
+</body>
+<footer>
+  <h2>Liens utiles :</h2>
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/setInterval" target="_blank">MDN (en): setInterval()</a>
+  </p>
+
+
+</footer>
+
+</html>

@@ -1,0 +1,116 @@
+.over {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+.cookie {
+  height: 368px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #8f6201;
+  border-width: 4px;
+}
+
+.cookieButton {
+  width: 70%;
+  height: auto;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cookieButton:active {
+  transform: scale(1.1);
+}
+
+.counter {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 680px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #8f6201;
+  border-width: 4px;
+}
+
+.buy p {
+  padding-left: 15px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+.multiplier {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.autoClick {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.multiplierButton {
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #be8305;
+  border-width: 4px;
+  box-shadow: 4px 4px 4px black;
+}
+
+.autoClickButton {
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #be8305;
+  border-width: 4px;
+  box-shadow: 4px 4px 4px black;
+  margin-right: 15px;
+}
+
+.multiplierButton:focus {
+  outline: none;
+}
+
+.autoClickButton:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #16232e;
+  border: #fefefe solid 1px;
+}
+
+.factories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.factories img {
+  margin-top: 15px;
+}

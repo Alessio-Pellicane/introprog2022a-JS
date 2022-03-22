@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/beers.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="assets/partials/header.js"></script>
+  <script src="src/04-beer-displayer-api.js" defer></script>
+  <title>Javascript : Beer displayer API</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <h1>Javascript : Beer displayer API</h1>
+  <section class="theory">
+    <h2>Exercice à développer dans 04-beer-displayer-api.js</h2>
+    <p>Utilisez <a href="https://punkapi.com/documentation/v2" target="_blank">Punk API</a> pour créer une application
+      qui affiche des bières.</p>
+    <p>Lorqu'on choisit un ID dans l'input et qu'on fait Load beer, il faut que l'on voie s'afficher les éléments
+      suivants de la bière: Beer name / Tagline / First brewed / Image</p>
+  </section>
+  <section class="exercice">
+    <div class="content">
+      <div>Please Enter an ID: <input type="number" min="1" value="1" class="beer_id"></input></div>
+      <div><button class="beer-button">Load beer data</button></div>
+      <div class="grid-container">
+        <div class="nameHead"><strong>Beer name</strong></div>
+        <div class="tagHead"><strong>Tagline</strong></div>
+        <div class="brewedHead"><strong>First brewed</strong></div>
+        <div class="imageHead"><strong>Image</strong></div>
+        <div class="beer_name"></div>
+        <div class="tagline"></div>
+        <div class="first_brewed"></div>
+        <div class="imageUrl"><img class="image_url"></img></div>
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+<footer>
+  <h2>Liens utiles :</h2>
+  <p><a href="https://punkapi.com/documentation/v2" target="_blank">Punk Api</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/API/Element/innerHTML" target="_blank">element.innerHTML</a></p>
+</footer>
+
+</html>

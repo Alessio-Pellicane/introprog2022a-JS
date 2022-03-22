@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/partials/header.js"></script>
+  <script src="src/01-calculator.js" defer></script>
+  <title>Javascript : Calculator</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <h1>Javascript : Calculator</h1>
+  <section class="theory">
+    <h2>Exercice à développer dans src/01-calculator.js</h2>
+    <p>Saurez-vous rendre cette calculette fonctionnelle ?</p>
+    <p>Avec les nombres décimaux également... Elle ne doit rendre aucun résultat s'il n'y a pas deux nombres...</p>
+  </section>
+  <section class="exercice">
+    <div>
+      <form action="#">
+        <input type="number" id="inputOne" required></input>
+        <input type="number" id="inputTwo" required></input>
+        <i class="fa-solid fa-equals"></i>
+        <input id="result" readonly></input>
+    </div>
+    </form>
+
+
+    <div>
+      <button id="plus"><i class="fa-solid fa-plus"></i></button>
+      <button id="minus"><i class="fa-solid fa-minus"></i></button>
+      <button id="multiplier"><i class="fa-solid fa-xmark"></i></button>
+      <button id="divider"><i class="fa-solid fa-divide"></i></button>
+    </div>
+  </section>
+</body>
+<footer>
+  <h2>Liens utiles :</h2>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions" target="_blank">Fonctions</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector"
+      target="_blank">document.querySelector</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener"
+      target="_blank">EventTarget.addEventListener()</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/parseFloat"
+      target="_blank">parseFloat()</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else"
+      target="_blank">if...else</a></p>
+</footer>
+
+</html>

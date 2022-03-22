@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/partials/header.js"></script>
+  <script src="src/03-slider-api.js" defer></script>
+  <title>Javascript : Slider API</title>
+</head>
+
+<body>
+  <header-component></header-component>
+  <h1>Javascript : Slider API</h1>
+  <section class="theory">
+    <h2>Exercice à développer dans src/03-slider-api.js</h2>
+    <p>Sur base de l'exercice avec le slider, au lieu de récupérer les images en local, nous allons récupérer les images
+      depuis une API (interface de programmation d'application).</p>
+
+    <p> Cette API fournit une image random lorsqu'on se connecte à <a href="https://random.imagecdn.app/v1/docs"
+        target="_blank">Random Image API</a>.</p>
+    Il va falloir utiliser la méthode Fetch ainsi qu'une fonction asynchrone (via une promise) ainsi qu'apprendre à bien
+    lire une documentation d'API.
+  </section>
+  <section class="exercice">
+    <div id="slider">
+      <div class="gallery-img">
+        <img src="https://random.imagecdn.app/v1/image?width=500&height=150" alt="random picture" id="slide">
+      </div>
+
+      <div id="previous">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div id="next"><i class="fa-solid fa-angle-right"></i></div>
+    </div>
+  </section>
+</body>
+<footer>
+  <h2>Liens utiles :</h2>
+  <p><a href="https://random.imagecdn.app/v1/docs" target="_blank">Random Image API</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/API/Fetch_API" target="_blank">API Fetch</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+      target="_blank">Promise</a></p>
+  <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/async_function"
+      target="_blank">async function</a></p>
+</footer>
+
+</html>
