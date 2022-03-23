@@ -12,3 +12,43 @@ let slide = new Array(
   "cat11.jpg",
   "cat12.jpg"
 );
+
+//Initialisation de l'indice (pour l'image)
+let cpt = 0;
+
+
+//Pour la fonction image précédente
+let btprev = document.getElementById("previous");
+btprev.addEventListener("click", previous);
+
+
+function previous() {
+
+  if (cpt === 0) {
+    cpt = slide.length - 1;
+  } else {
+    cpt--;
+  }
+  document.getElementById("slide").src = "assets/img/cats/" + slide[cpt];
+  console.log(cpt);
+}
+
+
+
+//Pour la fonction image suivante
+let btnext = document.getElementById("next");
+btnext.addEventListener("click", next);
+
+
+function next() {
+
+  if (cpt === slide.length - 1) {
+    cpt = 0
+  } else {
+    cpt++;
+  }
+  document.getElementById("slide").src = "assets/img/cats/" + slide[cpt];
+}
+
+//Intervalle
+setInterval(next, 4000);
